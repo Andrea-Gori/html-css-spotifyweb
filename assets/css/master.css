@@ -1,3 +1,5 @@
+/* Layout */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +16,11 @@
 .aside-nav {
   width: 21vw;
   background-color: black;
-  padding: 10px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  color: white;
-}
-
-.home-list {
-  margin-top: 15px;
-}
-
-.nav-top img {
-  height: 40px;
 }
 
 .content {
@@ -46,3 +41,54 @@ footer {
   bottom: 0;
   left: 0;
 }
+/* Layout */
+/* SIDEBAR TOP */
+.home-list {
+  margin-top: 15px;
+}
+
+.aside-nav h3 {
+  text-transform: uppercase;
+  padding: 10px 0px 10px 10px;
+}
+
+.aside-nav ul li {
+  list-style: none;
+  padding: 10px ;
+}
+
+.aside-nav ul li a {
+  text-decoration: none;
+  color: #636363;
+}
+
+
+.nav-top img {
+  height: 40px;
+}
+/* SIDEBAR TOP */
+/* SIDEBAR BOT */
+.nav-bot {
+  margin-top: auto;
+}
+
+.nav-bot p a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.nav-bot p a i {
+  padding-right: 7px;
+}
+
+.nav-bot p {
+  margin: 10px 0 ;
+}
+
+#jhon {
+  color: #FFF ;
+}
+
+
+
+/* SIDEBAR BOT */
