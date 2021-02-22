@@ -1,9 +1,12 @@
 /* Layout */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 #spotify-container {
@@ -26,6 +29,7 @@
 .content {
   width: 79vw ;
   background-color: #141922;
+  overflow-y: scroll;
 }
 
 .top-banner {
@@ -89,6 +93,75 @@ footer {
   color: #FFF ;
 }
 
-
-
 /* SIDEBAR BOT */
+/* TOP BANNER */
+
+.top-banner {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bolder;
+  background-color: #080b12;
+  color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  border-radius: 15px;
+  padding: 8px 25px;
+  margin-right: 5px;
+}
+/* TOP BANNER */
+/* MUSIC NAV */
+
+.music nav{
+  width: 70%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.music nav a {
+  text-decoration: none;
+  color: #74767b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* MUSIC NAV */
+/* RECENTLY PLAYED */
+
+.album {
+  display: flex;
+  justify-content:
+
+}
+
+.card {
+  height: 150px;
+}
+
+.recently-played h2 {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+  align-self: flex-start;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RECENTLY PLAYED */
