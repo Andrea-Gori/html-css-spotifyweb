@@ -17,7 +17,7 @@ body {
 }
 
 .aside-nav {
-  width: 21vw;
+  width: 20%;
   background-color: black;
   padding: 20px;
   color: white;
@@ -27,14 +27,19 @@ body {
 }
 
 .content {
-  width: 79vw ;
+  width: 80% ;
   background-color: #141922;
   overflow-y: scroll;
+  padding-top: 90px;
 }
 
 .top-banner {
   height: 90px;
+  width: 80%;
   background-color: #080b12;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 footer {
@@ -81,16 +86,17 @@ footer {
   color: #636363;
 }
 
-.nav-bot p a i {
-  padding-right: 7px;
-}
-
 .nav-bot p {
   margin: 10px 0 ;
 }
 
-#jhon {
+#john {
   color: #FFF ;
+}
+
+.fas {
+  font-size: 20px;
+  padding-right: 10px;
 }
 
 /* SIDEBAR BOT */
@@ -136,32 +142,55 @@ footer {
 
 .album {
   display: flex;
-  justify-content:
-
+  flex-wrap: wrap;
 }
 
 .card {
-  height: 150px;
+  margin: 10px;
+  text-align: center;
 }
 
-.recently-played h2 {
+.card img {
+  max-height: 200px;
+}
+
+.recently-played h2 , .created-for h2 , .popular-artists h2 {
   color: #FFF;
   font-weight: bold;
   font-size: 24px;
   align-self: flex-start;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
+}
+
+.song-title {
+  font-weight: bolder;
+  font-size: 16px;
+  color: #FFF;
+  margin-top: 8px;
+}
+
+.song-sub-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #6f7277;
+  margin-top: 5px;
+}
+
+/* RECENTLY PLAYED */
+/* CREATED FOR */
+
+.created-for>p , .popular-artists>p {
+  margin-left: 15px;
+}
+/* CREATED FOR */
+/* POPULAR ARTISTS */
+
+.card-artists {
+  border-radius: 50%;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-/* RECENTLY PLAYED */
+/* POPULAR ARTISTS */
