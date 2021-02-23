@@ -33,6 +33,10 @@ body {
   padding-top: 90px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .top-banner {
   height: 90px;
   width: 80%;
@@ -71,6 +75,9 @@ footer {
   color: #636363;
 }
 
+.aside-nav ul li a:hover {
+  color: #FFF;
+}
 
 .nav-top img {
   height: 40px;
@@ -190,7 +197,90 @@ footer {
   border-radius: 50%;
 }
 
-
-
-
 /* POPULAR ARTISTS */
+
+/* PLAYER */
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  padding-left: 15px;
+}
+
+.player-left-img {
+  margin-right: 10px;
+}
+
+.player-left-text{
+  margin-right: 10px;
+}
+
+.player-left-icons a {
+  color: #6f7277;
+  padding: 5px;
+}
+
+.player-left-icons a i {
+  font-size: 15px;
+}
+
+.player-center {
+  width: 100%;
+}
+
+.commands {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.commands a , .player-right a {
+  color: #FFF;
+}
+
+.commands a {
+  padding: 0 15px;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+}
+
+.progress input {
+  width: 60%;
+  height: 5px;
+  margin-top: 6px;
+  color: #bebebe;
+}
+
+.progress span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFF;
+  margin: 0 15px;
+}
+
+.player-right {
+  width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PLAYER */
