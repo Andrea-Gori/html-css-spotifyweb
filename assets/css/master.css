@@ -75,9 +75,6 @@ footer {
   color: #636363;
 }
 
-.aside-nav ul li a:hover {
-  color: #FFF;
-}
 
 .nav-top img {
   height: 40px;
@@ -123,8 +120,8 @@ footer {
   color: #f6f6f6;
   border: 1px solid #f6f6f6;
   border-radius: 15px;
-  padding: 8px 25px;
-  margin-right: 5px;
+  padding: 8px 20px;
+  margin-right: 20px;
 }
 /* TOP BANNER */
 /* MUSIC NAV */
@@ -274,13 +271,22 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* PLAYER */
+
+/* HOVER */
+
+.aside-nav ul li a:hover , nav a:hover {
+  color: #FFF;
+}
+
+.btn:hover , #play-hover:hover {
+  transform: scale(1.1);
+}
+
+.card a img:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '\f144';
+  font-weight: 900;
+}
+
+/* HOVER */
