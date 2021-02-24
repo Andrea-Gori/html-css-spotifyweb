@@ -17,7 +17,7 @@ body {
 }
 
 .aside-nav {
-  width: 20%;
+  width: 200px;
   background-color: black;
   padding: 20px;
   color: white;
@@ -27,7 +27,7 @@ body {
 }
 
 .content {
-  width: 80% ;
+  width: calc(100% - 200px) ;
   background-color: #141922;
   overflow-y: scroll;
   padding-top: 90px;
@@ -39,7 +39,7 @@ a {
 
 .top-banner {
   height: 90px;
-  width: 80%;
+  width: calc(100% - 200px);
   background-color: #080b12;
   position: fixed;
   top: 0;
@@ -75,9 +75,42 @@ footer {
   color: #636363;
 }
 
+.logo-compresso {
+  display: none;
+}
 
 .nav-top img {
   height: 40px;
+}
+
+@media all and (max-width: 552px) {
+  .aside-nav {
+    width: 50px;
+    padding: 15px;
+  }
+  .top-banner {
+    width: calc(100% - 50px);
+  }
+  .content {
+    width: calc(100% - 50px) ;
+  }
+  .sidebar-compressa{
+    display: none;
+  }
+  .aside-nav ul li {
+    padding: 0 ;
+    margin-left: -5px;
+  }
+  .logo-esteso{
+    display: none;
+  }
+  .logo-compresso {
+    display: block;
+  }
+  .nav-top img {
+    height: 30px;
+    margin-left: -5px;
+  }
 }
 /* SIDEBAR TOP */
 /* SIDEBAR BOT */
@@ -99,7 +132,7 @@ footer {
 }
 
 .fas {
-  font-size: 20px;
+  font-size: 15px;
   padding-right: 10px;
 }
 
@@ -152,10 +185,11 @@ footer {
 .card {
   margin: 10px;
   text-align: center;
+  max-width: 200px;
 }
 
 .card img {
-  max-height: 200px;
+  max-height: 180px;
 }
 
 .recently-played h2 , .created-for h2 , .popular-artists h2 {
@@ -256,7 +290,6 @@ footer {
   width: 60%;
   height: 5px;
   margin-top: 6px;
-  color: #bebebe;
 }
 
 .progress span {
@@ -268,8 +301,26 @@ footer {
 
 .player-right {
   width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.player-right input{
+  width: 30%;
+  height: 5px;
+}
+
+@media all and (max-width: 767px) {
+  .player-left-text , .player-compresso{
+    display: none;
+  }
+  .player-right {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
 /* PLAYER */
 
@@ -283,10 +334,31 @@ footer {
   transform: scale(1.1);
 }
 
-.card a img:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  content: '\f144';
+.card:hover a img {
+  opacity: 0.5;
+}
+
+.card a:first-child {
+  position: relative;
+  display: block;
+
+}
+
+.card a:first-child:after {
+  content: "\f144";
   font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 25px;
+  display: none;
+}
+
+.card:hover a:first-child:after {
+  display: block;
 }
 
 /* HOVER */
